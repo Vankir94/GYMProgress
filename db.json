@@ -1,0 +1,25 @@
+{
+    "id": 1,
+    "name": "имя программы",
+    "durationInDays": 30,
+    "trainingCycles": [
+    {
+    "id": 1,
+    "name": "название тренировочного цикла",
+    "durationInDays": 10,
+    "trainingDays": [
+    {
+    "id": 1,
+    "name": "название трен. дня",
+    "exercises": [
+    {
+    "id": 1,
+    "exerciseId": 1,
+    "name": "название упражнения"
+    }
+    ]
+    }
+    ]
+    }
+    ]
+    }
