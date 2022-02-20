@@ -1,0 +1,9 @@
+<div class="container" [ngStyle]="{backgroundColor:'var(--indigo-100)'}">
+    <p-calendar [(ngModel)]="date" [inline]="true" [showWeek]="true" selectionMode="multiple" ></p-calendar>
+
+    <div class="btn-next">
+        <button pButton pRipple type="button" label="Назад" class="p-button-text" (click)="goBack()"></button>
+
+        <p-button label="Далее" class="btn-color" (click)="goNext()"></p-button>
+    </div>
+</div>

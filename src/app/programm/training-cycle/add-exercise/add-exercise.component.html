@@ -1,0 +1,54 @@
+<div class="container" [ngStyle]="{backgroundColor:'var(--indigo-100)'}">
+    <div>
+        <span class="p-float-label p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" id="inputtext-left" pInputText [(ngModel)]="valueIconLeft">
+            <label for="inputtext-left">Поиск</label>
+        </span>
+    </div>
+    <div class="training-days">
+        <div>
+            <p-button label="создать упражнение" class="btn-color" (click)="createTheExercise()" icon="pi pi-plus">
+            </p-button>
+        </div>
+        <div>
+            <div class="flex-column m-4">
+                <div class="col flex justify-content-between shadow-2  exercise-card m-2">
+                    <span>свое упражнение</span>
+                    <div class="flex">
+                        <button pButton pRipple type="button" icon="pi pi-pencil"
+                            class="p-button-rounded p-button-help p-button-text"></button>
+                        <button pButton pRipple type="button" icon="pi pi-times"
+                            class="p-button-rounded p-button-danger p-button-text"></button>
+                    </div>
+                </div>
+
+                <div class="col flex justify-content-between shadow-2  exercise-card m-2">
+                    <span>отжимания</span>
+                    <div class="flex">
+                        <div class="p-field-checkbox">
+                            <p-checkbox name="group1" value="1" [(ngModel)]="selectedCities">
+                            </p-checkbox>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col flex justify-content-between shadow-2  exercise-card m-2">
+                    <span>жим лежа</span>
+                    <div class="flex">
+                        <div class="p-field-checkbox">
+                            <p-checkbox name="group1" value="2" [(ngModel)]="selectedCities">
+                            </p-checkbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="btn-next">
+        <button pButton pRipple type="button" label="Назад" class="p-button-text" (click)="goBack()"></button>
+
+        <p-button label="Сохранить" class="btn-color" (click)="goSave()"></p-button>
+    </div>
+</div>

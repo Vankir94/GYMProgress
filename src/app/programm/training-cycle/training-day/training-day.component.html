@@ -1,0 +1,50 @@
+<div class="container" [ngStyle]="{backgroundColor:'var(--indigo-100)'}">
+    <div>
+        <span class="p-float-label m-4">
+            <input id="float-input" type="text" pInputText [(ngModel)]="value5">
+            <label for="float-input">Название трен. дня</label>
+        </span>
+    </div>
+    <div class="training-days">
+        <div>
+            <p-button label="Упражнение" class="btn-color" (click)="addExercise()" icon="pi pi-plus"></p-button>
+        </div>
+        <div>
+            <div class="flex-column m-4">
+                <div class="col flex justify-content-between shadow-2  exercise-card m-2">
+                    <span>Упражнение 1</span>
+                    <div class="flex">
+                        <button pButton pRipple type="button" icon="pi pi-pencil"
+                            class="p-button-rounded p-button-help p-button-text"></button>
+                        <button pButton pRipple type="button" icon="pi pi-times"
+                            class="p-button-rounded p-button-danger p-button-text"></button>
+                    </div>
+                </div>
+                <div class="col flex justify-content-between shadow-2  exercise-card m-2">
+                    <span>Упражнение 2</span>
+                    <div class="flex">
+                        <button pButton pRipple type="button" icon="pi pi-pencil"
+                            class="p-button-rounded p-button-help p-button-text"></button>
+                        <button pButton pRipple type="button" icon="pi pi-times"
+                            class="p-button-rounded p-button-danger p-button-text"></button>
+                    </div>
+                </div>
+                <div class="col flex justify-content-between shadow-2  exercise-card m-2">
+                    <span>Упражнение 3</span>
+                    <div class="flex">
+                        <button pButton pRipple type="button" icon="pi pi-pencil"
+                            class="p-button-rounded p-button-help p-button-text"></button>
+                        <button pButton pRipple type="button" icon="pi pi-times"
+                            class="p-button-rounded p-button-danger p-button-text"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="btn-next">
+        <button pButton pRipple type="button" label="Назад" class="p-button-text" (click)="goBack()"></button>
+
+        <p-button label="Сохранить" class="btn-color" (click)="goSave()"></p-button>
+    </div>
+</div>

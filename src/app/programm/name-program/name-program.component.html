@@ -1,0 +1,22 @@
+<div class="container" [ngStyle]="{backgroundColor:'var(--indigo-100)'}">
+    <div class="flex-content">
+        <ul>
+            <li>
+                <span class="p-float-label">
+                    <input id="float-input" type="text" pInputText [(ngModel)]="value1" (input)="goValue($event)">
+                    <label for="float-input">Название программы</label>
+                </span>
+            </li>
+            <li>
+                <span class="p-float-label">
+                    <input id="float-input" type="text" pInputText [(ngModel)]="value2">
+                    <label for="float-input">Продолжительность(дни)</label>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-next">
+        <p-button label="Далее" class="btn-color" (click)="goNext()"></p-button>
+    </div>
+</div>
+
